@@ -1,0 +1,3 @@
+config-surumu: 0.1 #Bu ayarı değiştirirseniz güncellemeler kontrol edilemez.
+oyun-npc-idsi: 37 #Hangi NPC'nin GUI'yi açacağını bu seçenek sayesinde ayarlarsınız. NPC ID'yi öğrenmek için "/npc sel" ve ardından "/npc id" komutlarını kullanın.
+genel-scoreboard: true #Ayar true olarak kalırsa oyuncular lobideyken genel scoreboardı görür.
