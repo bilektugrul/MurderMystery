@@ -1,0 +1,36 @@
+genel:
+    title: '&e&lMURDER MYSTERY'
+    satirlar:
+        - '&7%server_time_dd.MM HH:mm:ss%'
+        - ''
+        - 'Coin: &a%murder_coin%'
+        - 'Puan: &a%murder_puan%'
+        - '&f&f'
+        - '&eM&&eA'
+bekleme:
+    title: '&e&lMURDER MYSTERY'
+    satirlar:
+    - '&7%server_time_dd.MM HH:mm:ss%'
+    - '&1'
+    - 'Harita: &a%murder_map%'
+    - 'Bekleyenler: &a%murder_bekleyen%'
+    - '&f'
+    - 'Bekleme süresi: &a%murder_beklemesüre%'
+    - ''
+    - 'Mod: &aKlasik'
+    - '&f&f'
+    - '&eM&&eA'
+oyun:
+    title: '&e&lMURDER MYSTERY'
+    satirlar:
+    - '&7%server_time_dd.MM HH:mm%'
+    - '&a&l&f   '
+    - 'Rolün: %murder_rol%'
+    - '&a&l'
+    - 'Kalan masumlar: &a%murder_kalanmasum%'
+    - 'Kalan süre: &a%murder_oyunsüre%'
+    - ''
+    - '%murder_dedektifdurum%' #Dedektif yaşıyorsa farklı, ölmüş ve yayı düşmüşse farklı, yay alınmışsa farklı sonuçlar gösterir.
+    - 'Harita: &a%murder_map%'
+    - '&f&f'
+    - '&eM&&eA'
