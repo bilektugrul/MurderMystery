@@ -1,0 +1,118 @@
+prefix: '&8(&bMurder Mystery&8)'
+yardim-mesaji:
+- '&9&m-----------------------------------'
+- '%murder_prefix% &6Bir arena yaratmak için: &3/murder yarat <arena-ismi>'
+- '%murder_prefix% &6Var olan bir arenayı silmek için: &3/murder sil <arena-ismi>'
+- '%murder_prefix% &6Bir arenanın lobi doğuş noktasını belirlemek için: &3/murder lobi <arena-ismi>'
+- '%murder_prefix% &6Bir arenaya oyun içi doğuş noktası eklemek için: &3/murder spawnekle <arena-ismi>'
+- '                              &cOyun maksimum 16 kişi olduğu için 16 veya üstünde sayıda doğuş noktası olmalıdır.'
+- '%murder_prefix% &6Bir arenaya oyun içi altın doğma noktası eklemek için: &3/murder goldspawnekle <arena-ismi>'
+- '%murder_prefix% &6Bir arenayı zorla başlatmak için: &3/murder başlat <arena-ismi>'
+- '                              &cHerhangi bir şeyi dinlemeden eğer arena müsait ise ve en az 1 kişi var ise direkt olarak oyunu başlatır.'
+- '%murder_prefix% &6Oyun dosyalarını yenilemek için: &3/murder reload'
+- '&9&m-----------------------------------'
+roller:
+    Katil: '&cKatil'
+    Dedektif: '&bDedektif'
+    Masum: '&aMasum'
+npc-hologram:
+  kisi-sayisi-satiri: 2 #%murder_players% placeholderi hangi satırdaysa o satırın numarasını yazın.
+  satirlar:
+  - '&a&lMURDER MYSTERY'
+  - '%murder_players% &ekişi oynuyor!'
+  - '&6(Sağ Tık)'
+arena-secme-guisi:
+    gui-ismi: '&1Murder Mystery'
+    esya: iron sword
+    esya-ismi: '&3Murder Mystery'
+    lore:
+    - '&6&m--------------------'
+    - '&7Arena bulmak için tıkla!'
+    - '&e%murder_players% &7kişi oynuyor!'
+    - '&6&m--------------------'
+titleler:
+    katil:
+        title: '&cROL: KATİL'
+        sub: '&eTüm masum insanları gebert!'
+    dedektif:
+        title: '&bROL: DEDEKTİF' 
+        sub: '&eMasum insanları katilden koru!'
+    masum:
+        title: '&aROL: MASUM'
+        sub: '&eKatilden kaç!'
+    biri-olunce: #Biri ölünce gelecek title mesajı.
+        title: '&cKatil seni gebertti'
+        sub: '&aDikkatli olmalısın!'
+    yay-dusunce:
+        title: ''
+        sub: '&bDedektif''in Yayı &6düştü!'
+    yanlis-kisiyi-oldurunce: #Burada PlaceholderAPI placeholderleri düzgün çalışmayacaktır.
+        title: '&cAhhs...'  
+        sub: '&aSanırım birisi yanlış kişiyi öldürdü :(.'
+action-bar:
+    ok-bekleme-suresi: '&b%murder_arrowcooldown% saniye &6sonra yeni ok alıcaksın...'
+    ok-verildi: '&6Yeni okunu aldın.' 
+    kilic-bekleme-suresi: '&6Kılıcını tekrar atabilmene: &b%murder_kılıçsüre% saniye'
+    kilic-verildi: '&aKılıcın kullanıma hazır!'
+musait-arena-yok: '%murder_prefix% &cÜzgünüm %player_name%, hiç müsait arena yok.'
+masumlar-yay-pusulasini-alinca: '%murder_prefix% &bDedektif''in Yayı''nın &6lokasyonunu gösteren pusulayı aldın, tıklayarak öğren!'
+yayi-aldin: '%murder_prefix% &bDedektif''in Yayı''nı aldın!'
+arenaya-girdi: '%murder_prefix% &3%player_name% &6giriş yaptı.'
+gerekli-kisi: '%murder_prefix% &6Oyunun başlaması için &3%murder_gerekliKişi% &6kişi gerekiyor.'
+arenadan-cikti: '%murder_prefix% &3%player_name% &6çıkış yaptı.'
+sistem-yenilendi: '%murder_prefix% &6Sistem yenilendiği için sıradan çıkarılıyorsunuz.'
+yeterli-kisi-yok: '%murder_prefix% &cYeterli kişi olmadığı için oyun başlayamadı.%nl%%murder_prefix% &cSüre sıfırlandı.'
+yay-mesafesi: '%murder_prefix% &6Yay ile arandaki mesafe: &3%murder_wbow%'
+yay-yerde-degil: '%murder_prefix% &cYay yerde değil!'
+oyun-otomatik-baslayacak: '%murder_prefix% &6Eğer &3%murder_beklemesüre% &6sonra bekleyen &34 veya daha fazla &6kişi olursa oyun otomatik olarak başlayacak.'
+oyun-basliyor: "%murder_prefix% &6Oyunun başlamasına &3%murder_beklemesüre% &6kaldı."
+masumlarKazandi:
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+- ' '
+- '                     &6Oyunu &a&lMasumlar &6kazandı!'
+- ' '
+- ' '
+- '                       &3Dedektif: &b$dedektif'
+- '                       &3Katil: &c$katil'
+- ' '
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+masumlarKazandiKahraman:
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+- ' '
+- '                     &6Oyunu &a&lMasumlar &6kazandı!'
+- ' '
+- ' '
+- '                       &3Dedektif: &b&m$dedektif&r'
+- '                       &3Katil: &c$katil'
+- '                       &3Kahraman: &e$kahraman'
+- ' '
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+masumlarKazandiSure:
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+- ' '
+- '                &6Süre bittiği için oyunu &a&lMasumlar &6kazandı!'
+- ' '
+- ' '
+- '                       &3Dedektif: &b$dedektif&r'
+- '                       &3Katil: &c$katil'
+- ' '
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+katilKazandi:
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+- ' '
+- '                     &6Oyunu &c&lKatil &6kazandı!'
+- ' '
+- ' '
+- '                       &3Dedektif: &b&m$dedektif&r'
+- '                       &3Katil: &c$katil'
+- ' '
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+oyunBitti:
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
+- ' '
+- '                     &6Oyunu &d&lKimse &6kazanmadı!'
+- ' '
+- ' '
+- '                       &3Gizemli bir şey sistemi yeniledi!'
+- ' '
+- '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
