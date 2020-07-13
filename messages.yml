@@ -1,8 +1,8 @@
-prefix: '&8(&bMurder Mystery&8)'
+prefix: '&bMurder Mystery &3»'
 yardim-mesaji:
 - '&9&m-----------------------------------'
 - '%murder_prefix% &6Bir arena yaratmak için: &3/murder yarat <arena-ismi>'
-- '%murder_prefix% &6Var olan bir arenayı silmek için: &3/murder sil <arena-ismi>'
+- '%murder_prefix% &6Bir arenayı silmek için: &3/murder sil <arena-ismi>'
 - '%murder_prefix% &6Bir arenanın lobi doğuş noktasını belirlemek için: &3/murder lobi <arena-ismi>'
 - '%murder_prefix% &6Bir arenaya oyun içi doğuş noktası eklemek için: &3/murder spawnekle <arena-ismi>'
 - '                              &cOyun maksimum 16 kişi olduğu için 16 veya üstünde sayıda doğuş noktası olmalıdır.'
@@ -49,6 +49,9 @@ titleler:
     yanlis-kisiyi-oldurunce: #Burada PlaceholderAPI placeholderleri düzgün çalışmayacaktır.
         title: '&cAhhs...'  
         sub: '&aSanırım birisi yanlış kişiyi öldürdü :(.'
+    yay-kazandin:
+        title: ''
+        sub: '&610 Altın topladığın için Yay kazandın!'
 action-bar:
     ok-bekleme-suresi: '&b%murder_arrowcooldown% saniye &6sonra yeni ok alıcaksın...'
     ok-verildi: '&6Yeni okunu aldın.' 
@@ -65,7 +68,8 @@ yeterli-kisi-yok: '%murder_prefix% &cYeterli kişi olmadığı için oyun başla
 yay-mesafesi: '%murder_prefix% &6Yay ile arandaki mesafe: &3%murder_wbow%'
 yay-yerde-degil: '%murder_prefix% &cYay yerde değil!'
 oyun-otomatik-baslayacak: '%murder_prefix% &6Eğer &3%murder_beklemesüre% &6sonra bekleyen &34 veya daha fazla &6kişi olursa oyun otomatik olarak başlayacak.'
-oyun-basliyor: "%murder_prefix% &6Oyunun başlamasına &3%murder_beklemesüre% &6kaldı."
+oyun-basliyor: '%murder_prefix% &6Oyunun başlamasına &3%murder_beklemesüre% &6kaldı.'
+bicak-verildi: '%murder_prefix% &6Bıçak katile verildi, dikkatli olun!'
 masumlarKazandi:
 - '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
 - ' '
@@ -73,7 +77,7 @@ masumlarKazandi:
 - ' '
 - ' '
 - '                       &3Dedektif: &b$dedektif'
-- '                       &3Katil: &c$katil'
+- '                       &3Katil: &c&m$katil&r &8[&6$öldürme Öldürme&8]'
 - ' '
 - '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
 masumlarKazandiKahraman:
@@ -83,7 +87,7 @@ masumlarKazandiKahraman:
 - ' '
 - ' '
 - '                       &3Dedektif: &b&m$dedektif&r'
-- '                       &3Katil: &c$katil'
+- '                       &3Katil: &c&m$katil&r &8[&6$öldürme Öldürme&8]'
 - '                       &3Kahraman: &e$kahraman'
 - ' '
 - '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
@@ -94,7 +98,7 @@ masumlarKazandiSure:
 - ' '
 - ' '
 - '                       &3Dedektif: &b$dedektif&r'
-- '                       &3Katil: &c$katil'
+- '                       &3Katil: &c$katil &8[&6$öldürme Öldürme&8]'
 - ' '
 - '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
 katilKazandi:
@@ -104,7 +108,7 @@ katilKazandi:
 - ' '
 - ' '
 - '                       &3Dedektif: &b&m$dedektif&r'
-- '                       &3Katil: &c$katil'
+- '                       &3Katil: &c$katil &8[&6$öldürme Öldürme&8]'
 - ' '
 - '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
 oyunBitti:
@@ -113,6 +117,6 @@ oyunBitti:
 - '                     &6Oyunu &d&lKimse &6kazanmadı!'
 - ' '
 - ' '
-- '                       &3Gizemli bir şey sistemi yeniledi!'
+- '                       &3Sistem yenilendiği için maç bitirildi.'
 - ' '
 - '&8&l■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■'
