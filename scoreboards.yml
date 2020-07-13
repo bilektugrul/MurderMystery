@@ -6,6 +6,8 @@ genel:
         - 'Coin: &a%murder_coin%'
         - 'Puan: &a%murder_puan%'
         - '&f&f'
+        - 'Aktif: &a%server_online%/%server_max_players%'
+        - '&a&l'
         - '&eM&&eA'
 bekleme:
     title: '&e&lMURDER MYSTERY'
