@@ -1,3 +1,32 @@
 config-surumu: 0.1 #Bu ayarı değiştirirseniz güncellemeler kontrol edilemez.
 oyun-npc-idsi: 37 #Hangi NPC'nin GUI'yi açacağını bu seçenek sayesinde ayarlarsınız. NPC ID'yi öğrenmek için "/npc sel" ve ardından "/npc id" komutlarını kullanın.
 genel-scoreboard: true #Ayar true olarak kalırsa oyuncular lobideyken genel scoreboardı görür.
+katil-yay-kazanabilsin: true #Ayar true olarak kalırsa katil 10 altın topladığında bir adet yay ve ok kazanabilir. false yaparsanız katil yay alamaz.
+oduller: #Maç sonunda ve maç sırasında verilecek puan/coinleri burada ayarlayabilirsiniz.
+    mesajlar:
+        puan-mesaji: '%murder_prefix% &6+%alınanPuan% Puan'
+        coin-mesaji: '%murder_prefix% &6+%alınanCoin% Coin'
+    altin-alinca:
+        puan: 5
+        coin: 2
+    katil-kazaninca:
+        katile:
+            puan: 10
+            coin: 5
+        diger:
+            puan: 1
+    masumlar-kazaninca:
+        dedektife:
+            puan: 12
+            coin: 6
+        kahramana: #Dedektif ölmüşse ve bir kahraman sayesinde maç kazanılmışsa, ödül kahramana gider.
+            puan: 14
+            coin: 7
+        masumlara:
+            puan: 5
+            coin: 2
+    hayatta-kaldigi-surece: #Katil hariç oyuncular hayatta olduğu sürece verilecek ödüller.
+        puan: 10
+        coin: 1
+        kontrol-suresi: 25 #Yazılan saniye kadar sürede bir yaşayanlar kontrol edilir ve ödül verilir.
+        mesaj: '%murder_prefix% &325 saniye &6daha hayatta kaldığın için &310 puan ve 1 coin &6kazandın!'
